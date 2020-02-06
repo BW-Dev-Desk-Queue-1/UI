@@ -16,7 +16,6 @@
         padding: 0 1%;
         letter-spacing: 1.2px;
       }
-
     }//.logo
 
     .links{
@@ -34,6 +33,59 @@
       }//nav
     }//links.
   }//header
+
+  @media @tablet{
+    header {
+      flex-direction: column;
+
+      .logo{
+        justify-content: center;
+        padding-bottom: 5%;
+      }
+    }//header
+  }//@media @tablet
+
+  @media @mobile{
+    header {
+      flex-direction: row;
+      padding: 4%;
+
+      .logo{
+        justify-content: flex-start;
+        padding-bottom: 0;
+        width: 51%;
+        h2{        
+          display: none;
+        }
+      }//.logo
+  
+      .links{
+        display: none;
+      }//links.
+
+      .onlyForMobile{
+        nav{
+            padding-right: 3%;
+          a{
+              font-style: normal;
+              font-weight: 600;
+              font-size: 1.5rem;
+          }//a
+        }//nav
+
+        button{
+          color:#FFFFFF;
+          background: #2E2C48;
+          font-style: normal;
+          font-weight: bold;
+          border-radius: 3px;
+          border: none;
+          padding: 1% 3%;
+        }//button
+      }
+
+    }//header
+  }//@media @mobile
 
   .middleSection{
     
@@ -63,6 +115,7 @@
         padding: 25px 87px;
         background: #0AC3CF;
         border-radius: 14px;
+        border:none;
       }//button
 
     }//.leftSide
@@ -72,6 +125,111 @@
       width: 39%;
 
     }//.rightSide
+}//.middleSection
 
-  }//.middleSection
+  @media @tablet{
+    .middleSection{
+      padding: 10% 5%;
+
+      .leftSide{
+        padding-top: 10.5%;
+        padding-left: 0;
+
+        h1{
+          height: 110px;
+          font-size: 3.8rem;
+        }
+        button{
+          font-size: 2rem;
+          padding: 2% 13%;
+        }//button
+      }
+    }
+  }//@media @tablet
+
+    @media @mobile{
+      .middleSection{
+        padding: 4%;
+        flex-direction: column;
+
+        .leftSide{
+          width: 70%;
+          padding-top: 7%;
+          padding-left: 0;
+    
+          h1{
+            height: 110px;
+            font-size: 3.6rem;
+          }
+    
+          p{
+            padding-bottom: 9%;
+            color: #525575;
+            #hideInMobile{
+              display: none;
+            }
+          }//p
+    
+          button{
+            font-size: 2.3rem;
+            line-height: 26px;
+    
+            padding: 3% 13%;
+            background: #0AC3CF;
+            border-radius: 8px;
+            border:none;
+          }//button
+    
+        }//.leftSide
+
+        .rightSide{
+
+          //border: 1px solid black;
+          margin-top: 17%;
+          margin-bottom: 6%;
+          margin-left: 20%;
+          width: 55%;
+    
+        }//.rightSide
+    }//.middleSection
+  }
+  
+  .onlyForMobile{
+    display: none;
+
+    @media @mobile{
+      display: contents;
+
+      footer{
+        padding: 4%;
+        border-top: 1px solid #E0E0E0;
+        background: #F9FAFB;
+
+      .LinksOnTheBottom{
+        
+        display: flex;
+        flex-direction: column;
+  
+          a{
+            padding: 1.3% 0;
+            text-decoration: none;
+            color: #525575;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: bold;
+          }//a
+
+        }//.LinksOnTheBottom
+
+        p{
+          padding-top: 3%;
+          font-size: 1.3rem;
+          font-style: normal;
+          font-weight: normal;
+          color: #646378;
+        }
+      }
+    }//@media @mobile
+
+  }//.onlyForMobile
 }// homePageForHelpers

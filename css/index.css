@@ -196,6 +196,49 @@ img {
   color: #525575;
   font-size: 1.7rem;
 }
+@media (max-width: 800px) {
+  .homePageForHelpers header {
+    flex-direction: column;
+  }
+  .homePageForHelpers header .logo {
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .homePageForHelpers header {
+    flex-direction: row;
+    padding: 4%;
+  }
+  .homePageForHelpers header .logo {
+    justify-content: flex-start;
+    padding-bottom: 0;
+    width: 51%;
+  }
+  .homePageForHelpers header .logo h2 {
+    display: none;
+  }
+  .homePageForHelpers header .links {
+    display: none;
+  }
+  .homePageForHelpers header .onlyForMobile nav {
+    padding-right: 3%;
+  }
+  .homePageForHelpers header .onlyForMobile nav a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .homePageForHelpers header .onlyForMobile button {
+    color: #FFFFFF;
+    background: #2E2C48;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    padding: 1% 3%;
+  }
+}
 .homePageForHelpers .middleSection {
   padding: 10% 0;
   display: flex;
@@ -219,7 +262,93 @@ img {
   padding: 25px 87px;
   background: #0AC3CF;
   border-radius: 14px;
+  border: none;
 }
 .homePageForHelpers .middleSection .rightSide {
   width: 39%;
+}
+@media (max-width: 800px) {
+  .homePageForHelpers .middleSection {
+    padding: 10% 5%;
+  }
+  .homePageForHelpers .middleSection .leftSide {
+    padding-top: 10.5%;
+    padding-left: 0;
+  }
+  .homePageForHelpers .middleSection .leftSide h1 {
+    height: 110px;
+    font-size: 3.8rem;
+  }
+  .homePageForHelpers .middleSection .leftSide button {
+    font-size: 2rem;
+    padding: 2% 13%;
+  }
+}
+@media (max-width: 500px) {
+  .homePageForHelpers .middleSection {
+    padding: 4%;
+    flex-direction: column;
+  }
+  .homePageForHelpers .middleSection .leftSide {
+    width: 70%;
+    padding-top: 7%;
+    padding-left: 0;
+  }
+  .homePageForHelpers .middleSection .leftSide h1 {
+    height: 110px;
+    font-size: 3.6rem;
+  }
+  .homePageForHelpers .middleSection .leftSide p {
+    padding-bottom: 9%;
+    color: #525575;
+  }
+  .homePageForHelpers .middleSection .leftSide p #hideInMobile {
+    display: none;
+  }
+  .homePageForHelpers .middleSection .leftSide button {
+    font-size: 2.3rem;
+    line-height: 26px;
+    padding: 3% 13%;
+    background: #0AC3CF;
+    border-radius: 8px;
+    border: none;
+  }
+  .homePageForHelpers .middleSection .rightSide {
+    margin-top: 17%;
+    margin-bottom: 6%;
+    margin-left: 20%;
+    width: 55%;
+  }
+}
+.homePageForHelpers .onlyForMobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .homePageForHelpers .onlyForMobile {
+    display: contents;
+  }
+  .homePageForHelpers .onlyForMobile footer {
+    padding: 4%;
+    border-top: 1px solid #E0E0E0;
+    background: #F9FAFB;
+  }
+  .homePageForHelpers .onlyForMobile footer .LinksOnTheBottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .homePageForHelpers .onlyForMobile footer .LinksOnTheBottom a {
+    padding: 1.3% 0;
+    text-decoration: none;
+    color: #525575;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .homePageForHelpers .onlyForMobile footer p {
+    padding-top: 3%;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: normal;
+    color: #646378;
+  }
 }
