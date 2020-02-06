@@ -1,0 +1,226 @@
+
+.teamPage {
+    padding: 1%;
+  
+    header {
+      display: flex;
+      align-items: center;
+  
+      .logo{
+        width: 61%;
+        display: flex;
+        align-items: center;
+  
+        h2{        
+          color: #2E2C48;
+          padding: 0 1%;
+          letter-spacing: 1.2px;
+        }
+      }//.logo
+  
+      .links{
+        width: 39%;
+  
+        nav{
+          display: flex;
+          justify-content: space-between;
+  
+          a{
+            text-decoration: none;
+            color: #525575;
+            font-size: 1.7rem;
+          }//a
+        }//nav
+      }//links.
+    }//header
+  
+    @media @tablet{
+      header {
+        flex-direction: column;
+  
+        .logo{
+          justify-content: center;
+          padding-bottom: 5%;
+        }
+      }//header
+    }//@media @tablet
+  
+    @media @mobile{
+      header {
+        flex-direction: row;
+        padding: 4%;
+  
+        .logo{
+          justify-content: flex-start;
+          padding-bottom: 0;
+          width: 51%;
+          h2{        
+            display: none;
+          }
+        }//.logo
+    
+        .links{
+          display: none;
+        }//links.
+  
+        .onlyForMobile{
+          nav{
+              padding-right: 3%;
+            a{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }//a
+          }//nav
+  
+          button{
+            color:#FFFFFF;
+            background: #2E2C48;
+            font-style: normal;
+            font-weight: bold;
+            border-radius: 3px;
+            border: none;
+            padding: 1% 3%;
+          }//button
+        }
+  
+      }//header
+    }//@media @mobile
+    
+    .Developers{
+        display: flex;
+        flex-direction: column;
+
+        p{
+            padding: 1% 2%;
+            font-size: 2.3rem;
+            font-weight: bold;
+        }
+
+        .UX{
+            padding: 3% 0;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+
+            a{
+                width: 40%;
+                div{
+                    border: 1px solid black;
+                    width: 100%;
+                }
+            }
+        }
+
+        .UI{
+            padding: 3% 0;
+            display: flex;
+            justify-content: space-evenly;
+
+            a{
+                width: 40%;
+                div{
+                    width: 100%;
+                    border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .ReactOne{
+            padding: 3% 0;
+            display: flex;
+            justify-content: space-evenly;
+            
+            a{
+                width: 40%;
+                div{
+                    width: 100%;
+                    border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }//.ReactOne
+
+        .ReactTwo{
+            padding: 3% 0;
+            display: flex;
+            justify-content: space-evenly;
+            
+            a{
+                width: 40%;
+                div{
+                    width: 100%;
+                    border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }//.ReactoTwo
+
+        .BackEnd{
+            padding: 3% 0;
+            display: flex;
+            justify-content: space-evenly;
+            
+            a{
+                width: 40%;
+                div{
+                    width: 100%;
+                    border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                }  
+            }
+        }
+
+        @media @tablet{
+                p{
+                    font-size: 1.5rem;
+                }
+        }
+
+    }//.Developers
+
+    .onlyForMobile{
+      display: none;
+  
+      @media @mobile{
+        display: contents;
+  
+        footer{
+          padding: 4%;
+          border-top: 1px solid #E0E0E0;
+          background: #F9FAFB;
+  
+        .LinksOnTheBottom{
+          
+          display: flex;
+          flex-direction: column;
+    
+            a{
+              padding: 1.3% 0;
+              text-decoration: none;
+              color: #525575;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: bold;
+            }//a
+  
+          }//.LinksOnTheBottom
+  
+          p{
+            padding-top: 3%;
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: normal;
+            color: #646378;
+          }
+        }
+      }//@media @mobile
+  
+    }//.onlyForMobile
+  }// homePageForHelpers

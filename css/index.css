@@ -167,6 +167,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.teamPage {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
 .homePageForHelpers {
   padding: 1%;
 }
@@ -345,6 +350,194 @@ img {
     font-weight: bold;
   }
   .homePageForHelpers .onlyForMobile footer p {
+    padding-top: 3%;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: normal;
+    color: #646378;
+  }
+}
+.teamPage {
+  padding: 1%;
+}
+.teamPage header {
+  display: flex;
+  align-items: center;
+}
+.teamPage header .logo {
+  width: 61%;
+  display: flex;
+  align-items: center;
+}
+.teamPage header .logo h2 {
+  color: #2E2C48;
+  padding: 0 1%;
+  letter-spacing: 1.2px;
+}
+.teamPage header .links {
+  width: 39%;
+}
+.teamPage header .links nav {
+  display: flex;
+  justify-content: space-between;
+}
+.teamPage header .links nav a {
+  text-decoration: none;
+  color: #525575;
+  font-size: 1.7rem;
+}
+@media (max-width: 800px) {
+  .teamPage header {
+    flex-direction: column;
+  }
+  .teamPage header .logo {
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .teamPage header {
+    flex-direction: row;
+    padding: 4%;
+  }
+  .teamPage header .logo {
+    justify-content: flex-start;
+    padding-bottom: 0;
+    width: 51%;
+  }
+  .teamPage header .logo h2 {
+    display: none;
+  }
+  .teamPage header .links {
+    display: none;
+  }
+  .teamPage header .onlyForMobile nav {
+    padding-right: 3%;
+  }
+  .teamPage header .onlyForMobile nav a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .teamPage header .onlyForMobile button {
+    color: #FFFFFF;
+    background: #2E2C48;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    padding: 1% 3%;
+  }
+}
+.teamPage .Developers {
+  display: flex;
+  flex-direction: column;
+}
+.teamPage .Developers p {
+  padding: 1% 2%;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.teamPage .Developers .UX {
+  padding: 3% 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.teamPage .Developers .UX a {
+  width: 40%;
+}
+.teamPage .Developers .UX a div {
+  border: 1px solid black;
+  width: 100%;
+}
+.teamPage .Developers .UI {
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.teamPage .Developers .UI a {
+  width: 40%;
+}
+.teamPage .Developers .UI a div {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.teamPage .Developers .ReactOne {
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.teamPage .Developers .ReactOne a {
+  width: 40%;
+}
+.teamPage .Developers .ReactOne a div {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.teamPage .Developers .ReactTwo {
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.teamPage .Developers .ReactTwo a {
+  width: 40%;
+}
+.teamPage .Developers .ReactTwo a div {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.teamPage .Developers .BackEnd {
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.teamPage .Developers .BackEnd a {
+  width: 40%;
+}
+.teamPage .Developers .BackEnd a div {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .teamPage .Developers p {
+    font-size: 1.5rem;
+  }
+}
+.teamPage .onlyForMobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .teamPage .onlyForMobile {
+    display: contents;
+  }
+  .teamPage .onlyForMobile footer {
+    padding: 4%;
+    border-top: 1px solid #E0E0E0;
+    background: #F9FAFB;
+  }
+  .teamPage .onlyForMobile footer .LinksOnTheBottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .teamPage .onlyForMobile footer .LinksOnTheBottom a {
+    padding: 1.3% 0;
+    text-decoration: none;
+    color: #525575;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .teamPage .onlyForMobile footer p {
     padding-top: 3%;
     font-size: 1.3rem;
     font-style: normal;
