@@ -254,7 +254,6 @@ img {
   padding-left: 9%;
 }
 .homePageForHelpers .middleSection .leftSide h1 {
-  height: 140px;
   letter-spacing: 0.8px;
 }
 .homePageForHelpers .middleSection .leftSide p {
@@ -281,7 +280,6 @@ img {
     padding-left: 0;
   }
   .homePageForHelpers .middleSection .leftSide h1 {
-    height: 110px;
     font-size: 3.8rem;
   }
   .homePageForHelpers .middleSection .leftSide button {
@@ -300,7 +298,6 @@ img {
     padding-left: 0;
   }
   .homePageForHelpers .middleSection .leftSide h1 {
-    height: 110px;
     font-size: 3.6rem;
   }
   .homePageForHelpers .middleSection .leftSide p {
