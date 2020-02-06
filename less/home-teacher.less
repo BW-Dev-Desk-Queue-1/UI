@@ -1,0 +1,140 @@
+*{
+    max-width: 100%;
+    // margin: 0 auto;
+    
+}
+.topimage{
+    display: none;
+}
+
+
+
+// this holds the text and button on the left side of the page
+.getstarted{
+    display: flex;
+    flex-direction: row;
+    
+
+.leftside{
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    line-height: 3em;
+    padding-top: 12%;
+    align-items: center;
+
+    h2{
+        font-size: x-large;
+        margin: 0;
+    }
+
+    h1{
+        font-size: 3em;
+        margin: 0;
+    }
+    
+
+
+    .button{
+        display: block;
+        background-color: darkorchid;
+        // padding-top: .5em;
+        cursor: pointer;
+        width: 200px;
+        height: 45px;
+        font-size: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 100%;
+        color: white;
+        font-family: Source Sans Pro;
+        
+    }
+}
+
+.iphone{
+    width: 50%;
+    text-align: center;
+}
+}
+
+footer hr{
+    display: none;
+}
+
+.tm{
+    display: flex;
+    align-content: center;
+    padding-left: 12.5%;
+}
+
+
+//feature page
+.mainimage{
+    max-width: 100%;
+    img{
+        border-radius: 3%;
+    }
+}
+
+.featurecontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tm{
+    display: none;
+}
+
+
+
+@media (max-width: 600px){
+
+
+
+.topimage{
+    display: flex;
+    padding-left: 5%;
+}
+
+    .getstarted{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .button{
+            margin-left:-14% ;
+        }
+
+
+
+        .iphone{
+            margin-top: 5em;
+            margin-bottom: 3em;
+
+        }
+
+
+    }
+
+
+    footer hr{
+        display: block;
+    }
+
+
+
+
+// feature page
+
+.featurecontainer{
+    flex-direction: column;
+    
+
+}
+
+
+}
