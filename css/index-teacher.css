@@ -1,0 +1,152 @@
+.links {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+.links h1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.links .navlist {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.links .navlist li {
+  font-size: 1.8em;
+  padding: 0.5em 0.5em;
+  list-style-type: none;
+}
+.links .navlist li a {
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.links2 {
+  display: none;
+}
+@media (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .links2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .links2 .navlist2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1em;
+  }
+  .links2 .navlist2 li {
+    font-size: 1.8em;
+    padding: 0.2em 0.2em;
+    list-style-type: none;
+  }
+  .links2 .navlist2 li a {
+    color: black;
+    text-decoration: none;
+  }
+}
+* {
+  max-width: 100%;
+}
+.topimage {
+  display: none;
+}
+.getstarted {
+  display: flex;
+  flex-direction: row;
+}
+.getstarted .leftside {
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  line-height: 3em;
+  padding-top: 12%;
+  align-items: center;
+}
+.getstarted .leftside h2 {
+  font-size: x-large;
+  margin: 0;
+}
+.getstarted .leftside h1 {
+  font-size: 3em;
+  margin: 0;
+}
+.getstarted .leftside .button {
+  display: block;
+  background-color: darkorchid;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 100%;
+  color: white;
+  font-family: Source Sans Pro;
+}
+.getstarted .iphone {
+  width: 50%;
+  text-align: center;
+}
+footer hr {
+  display: none;
+}
+.tm {
+  display: flex;
+  align-content: center;
+  padding-left: 12.5%;
+}
+.mainimage {
+  max-width: 100%;
+}
+.mainimage img {
+  border-radius: 3%;
+}
+.featurecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tm {
+  display: none;
+}
+@media (max-width: 600px) {
+  .topimage {
+    display: flex;
+    padding-left: 5%;
+  }
+  .getstarted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .getstarted .button {
+    margin-left: -14%;
+  }
+  .getstarted .iphone {
+    margin-top: 5em;
+    margin-bottom: 3em;
+  }
+  footer hr {
+    display: block;
+  }
+  .featurecontainer {
+    flex-direction: column;
+  }
+}
+* {
+  font-family: Source Sans Pro;
+}

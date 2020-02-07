@@ -1,0 +1,90 @@
+* {
+  max-width: 100%;
+}
+.topimage {
+  display: none;
+}
+.getstarted {
+  display: flex;
+  flex-direction: row;
+}
+.getstarted .leftside {
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  line-height: 3em;
+  padding-top: 12%;
+  align-items: center;
+}
+.getstarted .leftside h2 {
+  font-size: x-large;
+  margin: 0;
+}
+.getstarted .leftside h1 {
+  font-size: 3em;
+  margin: 0;
+}
+.getstarted .leftside .button {
+  display: block;
+  background-color: darkorchid;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 100%;
+  color: white;
+  font-family: Source Sans Pro;
+}
+.getstarted .iphone {
+  width: 50%;
+  text-align: center;
+}
+footer hr {
+  display: none;
+}
+.tm {
+  display: flex;
+  align-content: center;
+  padding-left: 12.5%;
+}
+.mainimage {
+  max-width: 100%;
+}
+.mainimage img {
+  border-radius: 3%;
+}
+.featurecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tm {
+  display: none;
+}
+@media (max-width: 600px) {
+  .topimage {
+    display: flex;
+    padding-left: 5%;
+  }
+  .getstarted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .getstarted .button {
+    margin-left: -14%;
+  }
+  .getstarted .iphone {
+    margin-top: 5em;
+    margin-bottom: 3em;
+  }
+  footer hr {
+    display: block;
+  }
+  .featurecontainer {
+    flex-direction: column;
+  }
+}
